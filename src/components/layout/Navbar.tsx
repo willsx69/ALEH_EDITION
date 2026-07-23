@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "@/constants";
 import { Button } from "@/components/ui/Button";
@@ -42,12 +43,14 @@ export function Navbar() {
               scrollToSection("#hero");
             }}
           >
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-rose-medium to-rose-strong flex items-center justify-center">
-              <span className="text-white font-bold text-sm">A</span>
-            </div>
-            <span className="font-bold text-lg text-gray-900">
-              Edition Aleh
-            </span>
+            <Image
+              src="/images/logo aleh.png"
+              alt="Edition Aleh"
+              width={130}
+              height={32}
+              className="h-8 w-auto"
+              priority
+            />
           </a>
 
           <div className="hidden md:flex items-center gap-8">
