@@ -19,7 +19,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <Image
-                src="/images/logo aleh.png"
+                src="/images/logo-aleh.png"
                 alt="Edition Aleh"
                 width={160}
                 height={40}

@@ -44,7 +44,7 @@ export function Navbar() {
             }}
           >
             <Image
-              src="/images/logo aleh.png"
+              src="/images/logo-aleh.png"
               alt="Edition Aleh"
               width={130}
               height={32}
