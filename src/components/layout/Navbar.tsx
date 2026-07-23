@@ -46,9 +46,9 @@ export function Navbar() {
             <Image
               src="/images/logo-aleh.png"
               alt="Edition Aleh"
-              width={180}
-              height={44}
-              className="h-11 w-auto"
+              width={200}
+              height={48}
+              className="h-12 w-auto sm:h-14"
               priority
             />
           </a>
