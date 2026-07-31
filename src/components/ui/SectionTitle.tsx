@@ -18,11 +18,11 @@ export function SectionTitle({
   return (
     <MotionBox className={`mb-12 md:mb-16 ${align === "center" ? "text-center" : "text-left"}`}>
       <div className="inline-flex items-center gap-3 mb-4">
-        <span className="w-8 h-px bg-gradient-to-r from-transparent to-rose-medium" />
+        <span className={`w-8 h-px bg-gradient-to-r from-transparent ${light ? "to-rose-light" : "to-rose-medium"}`} />
         <span className={`text-sm font-semibold uppercase tracking-[0.2em] ${light ? "text-rose-light" : "text-rose-medium"}`}>
           Edition Aleh
         </span>
-        <span className="w-8 h-px bg-gradient-to-l from-transparent to-rose-medium" />
+        <span className={`w-8 h-px bg-gradient-to-l from-transparent ${light ? "to-rose-light" : "to-rose-medium"}`} />
       </div>
       <h2
         className={`

@@ -15,7 +15,7 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
       <Quote size={20} className="text-rose-light mb-3 sm:mb-4 sm:w-8 sm:h-8" />
 
       <p className="text-gray-600 leading-relaxed mb-6 italic">
-        "{testimonial.content}"
+        &ldquo;{testimonial.content}&rdquo;
       </p>
 
       <div className="mb-4">

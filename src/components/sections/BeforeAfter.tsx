@@ -1,9 +1,8 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { ArrowRight, X, Check } from "lucide-react";
+import { X, Check } from "lucide-react";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import { MotionBox, StaggerContainer, StaggerItem } from "@/components/animations/MotionBox";
+import { MotionBox } from "@/components/animations/MotionBox";
 import { BEFORE_AFTER } from "@/constants";
 
 export function BeforeAfterSection() {

@@ -53,7 +53,7 @@ export function Navbar() {
             />
           </a>
 
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
             {NAV_LINKS.map((link) => (
               <button
                 key={link.label}

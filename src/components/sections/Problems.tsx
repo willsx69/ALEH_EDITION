@@ -19,8 +19,8 @@ export function Problems() {
         />
 
         <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {PROBLEMS.map((problem, index) => (
-            <ProblemCard key={problem.title} problem={problem} index={index} />
+          {PROBLEMS.map((problem) => (
+            <ProblemCard key={problem.title} problem={problem} />
           ))}
         </StaggerContainer>
       </div>

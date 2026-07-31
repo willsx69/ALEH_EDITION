@@ -14,6 +14,7 @@ import {
   FileSpreadsheet,
   ClipboardCheck,
   Calendar,
+  CalendarDays,
   Zap,
   Check,
   ChevronRight,
@@ -38,6 +39,8 @@ import {
   Wrench,
   CircleDollarSign,
   TrendingUp,
+  NotebookPen,
+  MessageCircle,
   type LucideIcon,
 } from "lucide-react";
 
@@ -57,6 +60,7 @@ const iconMap: Record<string, LucideIcon> = {
   FileSpreadsheet,
   ClipboardCheck,
   Calendar,
+  CalendarDays,
   Zap,
   Check,
   ChevronRight,
@@ -81,6 +85,8 @@ const iconMap: Record<string, LucideIcon> = {
   Wrench,
   CircleDollarSign,
   TrendingUp,
+  NotebookPen,
+  MessageCircle,
 };
 
 interface IconProps {

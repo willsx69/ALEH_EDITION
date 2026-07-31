@@ -7,7 +7,6 @@ import type { Problem } from "@/types";
 
 interface ProblemCardProps {
   problem: Problem;
-  index: number;
 }
 
 export function ProblemCard({ problem }: ProblemCardProps) {
@@ -23,7 +22,7 @@ export function ProblemCard({ problem }: ProblemCardProps) {
         </div>
 
         <h3 className="text-lg font-bold text-gray-900 mb-2">
-          "{problem.title}"
+          &ldquo;{problem.title}&rdquo;
         </h3>
 
         <p className="text-gray-500 text-sm leading-relaxed">

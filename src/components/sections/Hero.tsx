@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-import { PeonyDecorationLeft, PeonyDecorationRight } from "@/components/animations/PeonyDecoration";
+import { SocialButton } from "@/components/ui/SocialButton";
 
 export function Hero() {
   const scrollToCTA = () => {
@@ -92,6 +92,17 @@ export function Hero() {
                 <p className="text-white font-semibold text-sm">+2.000 mulheres</p>
                 <p className="text-white/60 text-xs">já transformaram suas finanças</p>
               </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.2 }}
+              className="flex flex-wrap gap-3 mt-6"
+            >
+              <SocialButton type="whatsapp" size="sm" />
+              <SocialButton type="instagram" size="sm" />
+              <SocialButton type="email" size="sm" />
             </motion.div>
           </motion.div>
 

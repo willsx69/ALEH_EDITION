@@ -1,8 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import { MotionBox, StaggerContainer, StaggerItem } from "@/components/animations/MotionBox";
+import { StaggerContainer, StaggerItem } from "@/components/animations/MotionBox";
 import { Download, BookOpen, CheckCircle, Sparkles } from "lucide-react";
 
 const steps = [

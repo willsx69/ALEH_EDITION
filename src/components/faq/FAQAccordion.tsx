@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import { MotionBox, StaggerContainer, StaggerItem } from "@/components/animations/MotionBox";
+import { StaggerContainer, StaggerItem } from "@/components/animations/MotionBox";
 import type { FAQ } from "@/types";
 
 interface FAQAccordionProps {

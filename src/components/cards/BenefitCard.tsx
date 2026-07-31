@@ -7,10 +7,9 @@ import type { Benefit } from "@/types";
 
 interface BenefitCardProps {
   benefit: Benefit;
-  index: number;
 }
 
-export function BenefitCard({ benefit, index }: BenefitCardProps) {
+export function BenefitCard({ benefit }: BenefitCardProps) {
   return (
     <StaggerItem>
       <Card className="relative overflow-hidden group h-full">

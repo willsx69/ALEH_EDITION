@@ -1,16 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Sparkles, ArrowRight, ShieldCheck } from "lucide-react";
+import { Sparkles, ShieldCheck, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { SocialButton } from "@/components/ui/SocialButton";
 import { Countdown } from "@/components/layout/Countdown";
 
 export function CTA() {
-  const handleClick = () => {
-    const el = document.querySelector("#hero");
-    el?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section
       id="cta"
@@ -45,18 +41,25 @@ export function CTA() {
             próspera que você merece. Seu eu do futuro vai te agradecer.
           </p>
 
-          <Button
-            variant="gold"
-            size="lg"
-            className="sm:!text-xl sm:!px-10 sm:!py-5"
-            icon={<Sparkles size={20} />}
-            iconPosition="left"
-            onClick={handleClick}
-          >
-            Quero meu Ebook Agora
-          </Button>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+            <Button
+              variant="gold"
+              size="lg"
+              className="sm:!text-xl sm:!px-10 sm:!py-5"
+              icon={<Sparkles size={20} />}
+              iconPosition="left"
+            >
+              Quero meu Ebook Agora
+            </Button>
+          </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 mt-6 text-sm text-gray-400">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8">
+            <SocialButton type="whatsapp" size="sm" />
+            <SocialButton type="instagram" size="sm" />
+            <SocialButton type="email" size="sm" />
+          </div>
+
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-gray-400">
             <span className="flex items-center gap-1">
               <ShieldCheck size={14} />
               Compra Segura

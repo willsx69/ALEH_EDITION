@@ -25,8 +25,8 @@ export function ModuleCard({ module }: ModuleCardProps) {
               {String(module.number).padStart(2, "0")}
             </div>
           </div>
-          <div className="w-11 h-11 rounded-xl bg-rose-bg flex items-center justify-center group-hover:bg-rose-light/30 group-hover:scale-110 transition-all duration-300 shrink-0">
-            <DynamicIcon name={module.icon} className="text-rose-medium" size={20} />
+          <div className="w-12 h-12 rounded-xl bg-rose-bg flex items-center justify-center group-hover:bg-rose-light/30 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shrink-0">
+            <DynamicIcon name={module.icon} className="text-rose-medium" size={22} />
           </div>
         </div>
 
@@ -34,13 +34,13 @@ export function ModuleCard({ module }: ModuleCardProps) {
           {module.title}
         </h3>
 
-        <div className="w-8 h-0.5 bg-gradient-to-r from-rose-medium to-gold rounded-full mb-6" />
+        <div className="w-10 h-0.5 bg-gradient-to-r from-rose-medium to-gold rounded-full mb-6" />
 
         <ul className="space-y-3 flex-1">
           {module.topics.map((topic) => (
-            <li key={topic} className="flex items-start gap-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-gold/70 mt-2 shrink-0" />
-              <span className="text-gray-500 text-sm leading-relaxed">{topic}</span>
+            <li key={topic} className="flex items-start gap-3 group/topic">
+              <span className="w-1.5 h-1.5 rounded-full bg-gold/70 mt-2 shrink-0 group-hover/topic:bg-gold group-hover/topic:scale-125 transition-all duration-300" />
+              <span className="text-gray-500 text-sm leading-relaxed group-hover/topic:text-gray-700 transition-colors duration-300">{topic}</span>
             </li>
           ))}
         </ul>

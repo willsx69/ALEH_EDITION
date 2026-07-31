@@ -61,7 +61,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           ${className}
         `}
         disabled={disabled || isLoading}
-        {...(props as any)}
+        {...(props as React.ComponentPropsWithoutRef<typeof motion.button>)}
       >
         {isLoading && (
           <Loader2 className="w-5 h-5 animate-spin" />

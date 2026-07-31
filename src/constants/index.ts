@@ -7,8 +7,8 @@ export const SITE_CONFIG = {
   url: "https://editionaleh.com",
   ogImage: "/images/og-image.jpg",
   author: "Edition Aleh",
-  email: "contato@editionaleh.com",
-  phone: "5588999999999",
+  email: "editionaleh@outlook.com",
+  phone: "5592993747071",
 };
 
 export const NAV_LINKS: NavLink[] = [
@@ -164,27 +164,22 @@ export const MODULES: Module[] = [
 export const BONUSES: Bonus[] = [
   {
     title: "Planner Financeiro",
-    description: "Um planner completo para acompanhar suas finanças mês a mês.",
-    icon: "BookOpen",
-  },
-  {
-    title: "Planilha Premium",
-    description: "Planilha inteligente para controle de gastos e metas.",
-    icon: "FileSpreadsheet",
+    description: "Organize suas finanças mês a mês com um planner completo e intuitivo.",
+    icon: "NotebookPen",
   },
   {
     title: "Checklist Financeiro",
-    description: "Checklist prático para manter suas finanças sempre em dia.",
+    description: "Checklist prático para manter suas finanças sempre em dia sem esquecimentos.",
     icon: "ClipboardCheck",
   },
   {
     title: "Calendário Financeiro",
-    description: "Calendário anual com datas importantes para sua vida financeira.",
-    icon: "Calendar",
+    description: "Calendário anual com todas as datas importantes para sua vida financeira.",
+    icon: "CalendarDays",
   },
   {
     title: "Desafio 30 Dias",
-    description: "Um desafio transformador de 30 dias para criar novos hábitos.",
+    description: "Transforme seus hábitos financeiros em apenas 30 dias com desafios diários.",
     icon: "Zap",
   },
 ];
@@ -267,7 +262,7 @@ export const FAQS: FAQ[] = [
   },
   {
     question: "Os bônus são realmente gratuitos?",
-    answer: "Sim! Todos os bônus estão incluídos no valor do ebook. Você leva o Planner Financeiro, Planilha Premium, Checklist, Calendário Financeiro e o Desafio 30 Dias sem nenhum custo adicional.",
+    answer: "Sim! Todos os bônus estão incluídos no valor do ebook. Você leva o Planner Financeiro, Checklist Financeiro, Calendário Financeiro e o Desafio 30 Dias sem nenhum custo adicional.",
   },
   {
     question: "E se eu não gostar do conteúdo?",
@@ -281,10 +276,12 @@ export const FAQS: FAQ[] = [
 
 export const SOCIAL_LINKS = [
   { name: "Instagram", url: "https://instagram.com/editionaleh", icon: "Camera" },
-  { name: "YouTube", url: "https://youtube.com/@editionaleh", icon: "Video" },
-  { name: "TikTok", url: "https://tiktok.com/@editionaleh", icon: "Music2" },
-  { name: "Pinterest", url: "https://pinterest.com/editionaleh", icon: "Palette" },
+  { name: "WhatsApp", url: `https://wa.me/${SITE_CONFIG.phone}?text=${encodeURIComponent("Olá! Tenho interesse no ebook Edition Aleh.")}`, icon: "MessageCircle" },
 ];
+
+export const WHATSAPP_LINK = `https://wa.me/${SITE_CONFIG.phone}?text=${encodeURIComponent("Olá! Tenho interesse no ebook Edition Aleh.")}`;
+export const INSTAGRAM_LINK = "https://instagram.com/editionaleh";
+export const PURCHASE_LINK = "https://pay.kiwify.com.br/example";
 
 export const FOOTER_LINKS = [
   { label: "Início", href: "#hero" },
@@ -294,7 +291,7 @@ export const FOOTER_LINKS = [
   { label: "FAQ", href: "#faq" },
   { label: "Política de Privacidade", href: "/politica-privacidade" },
   { label: "Termos de Uso", href: "/termos-uso" },
-  { label: "Contato", href: "mailto:contato@editionaleh.com" },
+  { label: "Contato", href: "mailto:editionaleh@outlook.com" },
 ];
 
 export const PRICING: PricingPlan = {
@@ -305,11 +302,10 @@ export const PRICING: PricingPlan = {
   features: [
     "Ebook completo em PDF",
     "Planner Financeiro",
-    "Planilha Premium",
     "Checklist Financeiro",
     "Calendário Financeiro",
     "Desafio 30 Dias",
-    "Suporte via email",
+    "Suporte via e-mail",
     "7 dias de garantia",
     "Acesso vitalício",
   ],
