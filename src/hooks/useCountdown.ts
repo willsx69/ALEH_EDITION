@@ -8,13 +8,12 @@ interface TimeLeft {
   seconds: number;
 }
 
-export function useCountdown(targetDate: string) {
+export function useCountdown(getTarget: () => string) {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({ hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    const target = new Date(targetDate).getTime();
-
     const update = () => {
+      const target = new Date(getTarget()).getTime();
       const now = new Date().getTime();
       const diff = target - now;
 
@@ -33,7 +32,7 @@ export function useCountdown(targetDate: string) {
     update();
     const interval = setInterval(update, 1000);
     return () => clearInterval(interval);
-  }, [targetDate]);
+  }, [getTarget]);
 
   return timeLeft;
 }

@@ -16,6 +16,7 @@ export const NAV_LINKS: NavLink[] = [
   { label: "Benefícios", href: "#beneficios" },
   { label: "Conteúdo", href: "#conteudo" },
   { label: "Bônus", href: "#bonus" },
+  { label: "Planilha", href: "#planilha" },
   { label: "Depoimentos", href: "#depoimentos" },
   { label: "FAQ", href: "#faq" },
 ];
@@ -281,7 +282,8 @@ export const SOCIAL_LINKS = [
 
 export const WHATSAPP_LINK = `https://wa.me/${SITE_CONFIG.phone}?text=${encodeURIComponent("Olá! Tenho interesse no ebook Edition Aleh.")}`;
 export const INSTAGRAM_LINK = "https://instagram.com/editionaleh";
-export const PURCHASE_LINK = "https://pay.kiwify.com.br/example";
+export const PURCHASE_LINK = "https://pay.hotmart.com/G106990278J";
+export const SPREADSHEET_LINK = "https://pay.hotmart.com/F106992089X";
 
 export const FOOTER_LINKS = [
   { label: "Início", href: "#hero" },
@@ -289,6 +291,7 @@ export const FOOTER_LINKS = [
   { label: "Conteúdo", href: "#conteudo" },
   { label: "Depoimentos", href: "#depoimentos" },
   { label: "FAQ", href: "#faq" },
+  { label: "Planilha", href: "#planilha" },
   { label: "Política de Privacidade", href: "/politica-privacidade" },
   { label: "Termos de Uso", href: "/termos-uso" },
   { label: "Contato", href: "mailto:editionaleh@outlook.com" },
@@ -296,8 +299,8 @@ export const FOOTER_LINKS = [
 
 export const PRICING: PricingPlan = {
   name: "Edition Aleh",
-  price: "R$ 47,00",
-  originalPrice: "R$ 97,00",
+  price: "R$ 9,99",
+  originalPrice: "R$ 19,90",
   description: "Transforme sua relação com o dinheiro e conquiste a liberdade financeira que você merece.",
   features: [
     "Ebook completo em PDF",
@@ -308,5 +311,20 @@ export const PRICING: PricingPlan = {
     "Suporte via e-mail",
     "7 dias de garantia",
     "Acesso vitalício",
+  ],
+};
+
+export const SPREADSHEET_PRICING: PricingPlan = {
+  name: "Planilha Financeira Premium",
+  price: "R$ 3,97",
+  originalPrice: "R$ 12,90",
+  description: "Sua rotina financeira em ordem com uma planilha completa, automática e fácil de usar.",
+  features: [
+    "Controle de gastos mês a mês",
+    "Metas de economia automáticas",
+    "Gráficos e relatórios visuais",
+    "Fórmulas prontas, sem complicação",
+    "Funciona no Excel e Google Sheets",
+    "Acesso vitalício e atualizações",
   ],
 };

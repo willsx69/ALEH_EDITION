@@ -21,7 +21,7 @@ export function ModuleCard({ module }: ModuleCardProps) {
             <span className="text-xs font-semibold uppercase tracking-[0.15em] text-rose-medium">
               Módulo {module.number}
             </span>
-            <div className="text-6xl sm:text-7xl font-bold text-rose-light/30 leading-none mt-1 select-none">
+            <div className="text-6xl sm:text-7xl font-bold leading-none mt-1 select-none bg-gradient-to-br from-rose-light via-rose-medium to-gold bg-clip-text text-transparent">
               {String(module.number).padStart(2, "0")}
             </div>
           </div>

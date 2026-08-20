@@ -5,6 +5,7 @@ import { Sparkles, ShieldCheck, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { SocialButton } from "@/components/ui/SocialButton";
 import { Countdown } from "@/components/layout/Countdown";
+import { PURCHASE_LINK, PRICING } from "@/constants";
 
 export function CTA() {
   return (
@@ -31,6 +32,14 @@ export function CTA() {
             <Countdown />
           </div>
 
+          <div className="mb-8">
+            <p className="text-gray-400 line-through text-xl mb-1">De {PRICING.originalPrice}</p>
+            <p className="text-4xl sm:text-5xl font-bold text-white">
+              por <span className="text-gradient">{PRICING.price}</span>
+            </p>
+            <p className="text-gray-400 text-sm mt-2">Pagamento único - acesso vitalício</p>
+          </div>
+
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-6 text-balance">
             Seu futuro financeiro começa com{" "}
             <span className="text-gradient">uma decisão hoje</span>.
@@ -48,6 +57,7 @@ export function CTA() {
               className="sm:!text-xl sm:!px-10 sm:!py-5"
               icon={<Sparkles size={20} />}
               iconPosition="left"
+              href={PURCHASE_LINK}
             >
               Quero meu Ebook Agora
             </Button>

@@ -5,6 +5,7 @@ import { HowItWorks } from "@/components/sections/HowItWorks";
 import { WhatYouLearn } from "@/components/sections/WhatYouLearn";
 import { Modules } from "@/components/sections/Modules";
 import { Bonuses } from "@/components/sections/Bonuses";
+import { Spreadsheet } from "@/components/sections/Spreadsheet";
 import { BeforeAfterSection } from "@/components/sections/BeforeAfter";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Guarantee } from "@/components/sections/Guarantee";
@@ -26,6 +27,7 @@ export default function HomePage() {
         <WhatYouLearn />
         <Modules />
         <Bonuses />
+        <Spreadsheet />
         <BeforeAfterSection />
         <Testimonials />
         <Guarantee />

@@ -10,6 +10,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   isLoading?: boolean;
   icon?: React.ReactNode;
   iconPosition?: "left" | "right";
+  href?: string;
 }
 
 const variants = {
@@ -43,26 +44,22 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       children,
       className = "",
       disabled,
+      href,
       ...props
     },
     ref
   ) => {
-    return (
-      <motion.button
-        ref={ref}
-        whileHover={{ scale: 1.02 }}
-        whileTap={{ scale: 0.98 }}
-        className={`
-          relative inline-flex items-center justify-center gap-2 font-semibold
-          transition-all duration-300 overflow-hidden group
-          ${variants[variant]}
-          ${sizes[size]}
-          ${disabled || isLoading ? "opacity-60 cursor-not-allowed" : "cursor-pointer"}
-          ${className}
-        `}
-        disabled={disabled || isLoading}
-        {...(props as React.ComponentPropsWithoutRef<typeof motion.button>)}
-      >
+    const classes = `
+      relative inline-flex items-center justify-center gap-2 font-semibold
+      transition-all duration-300 overflow-hidden group
+      ${variants[variant]}
+      ${sizes[size]}
+      ${disabled || isLoading ? "opacity-60 cursor-not-allowed" : "cursor-pointer"}
+      ${className}
+    `;
+
+    const inner = (
+      <>
         {isLoading && (
           <Loader2 className="w-5 h-5 animate-spin" />
         )}
@@ -75,6 +72,34 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         )}
 
         <span className="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+      </>
+    );
+
+    if (href) {
+      return (
+        <motion.a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          className={classes}
+        >
+          {inner}
+        </motion.a>
+      );
+    }
+
+    return (
+      <motion.button
+        ref={ref}
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
+        className={classes}
+        disabled={disabled || isLoading}
+        {...(props as React.ComponentPropsWithoutRef<typeof motion.button>)}
+      >
+        {inner}
       </motion.button>
     );
   }

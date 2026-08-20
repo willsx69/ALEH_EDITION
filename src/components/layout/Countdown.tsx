@@ -3,10 +3,16 @@
 import { motion } from "framer-motion";
 import { useCountdown } from "@/hooks/useCountdown";
 
+const WINDOW_24H = 24 * 60 * 60 * 1000;
+
+function getTarget24h() {
+  const now = Date.now();
+  const windowStart = Math.floor(now / WINDOW_24H) * WINDOW_24H;
+  return new Date(windowStart + WINDOW_24H).toISOString();
+}
+
 export function Countdown() {
-  const targetDate = new Date();
-  targetDate.setDate(targetDate.getDate() + 3);
-  const { hours, minutes, seconds } = useCountdown(targetDate.toISOString());
+  const { hours, minutes, seconds } = useCountdown(getTarget24h);
 
   return (
     <div className="flex items-center justify-center gap-4 sm:gap-6">
