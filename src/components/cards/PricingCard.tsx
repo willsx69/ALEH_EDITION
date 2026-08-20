@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Check, Sparkles, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
+import { PURCHASE_LINK } from "@/constants";
 import type { PricingPlan } from "@/types";
 
 interface PricingCardProps {
@@ -55,6 +56,7 @@ export function PricingCard({ plan }: PricingCardProps) {
           className="w-full"
           icon={<Sparkles size={20} />}
           iconPosition="left"
+          href={PURCHASE_LINK}
         >
           Quero meu Ebook
         </Button>

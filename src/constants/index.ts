@@ -1,4 +1,4 @@
-import type { Benefit, Module, Bonus, Testimonial, FAQ, Problem, NavLink, BeforeAfter, PricingPlan } from "@/types";
+import type { Benefit, Module, Bonus, FAQ, Problem, NavLink, BeforeAfter, PricingPlan } from "@/types";
 
 export const SITE_CONFIG = {
   name: "Edition Aleh",
@@ -17,7 +17,7 @@ export const NAV_LINKS: NavLink[] = [
   { label: "Conteúdo", href: "#conteudo" },
   { label: "Bônus", href: "#bonus" },
   { label: "Planilha", href: "#planilha" },
-  { label: "Depoimentos", href: "#depoimentos" },
+  { label: "Conteúdo incluído", href: "#conteudo-incluido" },
   { label: "FAQ", href: "#faq" },
 ];
 
@@ -202,42 +202,46 @@ export const BEFORE_AFTER: BeforeAfter = {
   ],
 };
 
-export const TESTIMONIALS: Testimonial[] = [
+export const WHAT_YOU_GET: Bonus[] = [
   {
-    name: "Ana Carolina",
-    role: "Designer",
-    avatar: "/images/testimonial-1.jpg",
-    content: "Esse ebook mudou completamente minha relação com o dinheiro. Em apenas 30 dias já consegui organizar minhas contas e comecei minha reserva de emergência.",
-    rating: 5,
+    title: "E-book Edition Aleh",
+    description: "O guia completo em PDF com o passo a passo para organizar suas finanças.",
+    icon: "BookOpen",
   },
   {
-    name: "Juliana Mendes",
-    role: "Professora",
-    avatar: "/images/testimonial-2.jpg",
-    content: "Finalmente um método que funciona de verdade! A linguagem é acolhedora e o passo a passo é tão simples que qualquer consegue seguir.",
-    rating: 5,
+    title: "Planner Financeiro",
+    description: "Organize suas finanças mês a mês com um planner completo e intuitivo.",
+    icon: "NotebookPen",
   },
   {
-    name: "Rafaela Costa",
-    role: "Arquiteta",
-    avatar: "/images/testimonial-3.jpg",
-    content: "Comprei vários cursos de finanças mas só com o Edition Aleh consegui realmente colocar em prática. Recomendo de olhos fechados!",
-    rating: 5,
+    title: "Checklist Financeiro",
+    description: "Checklist prático para manter suas finanças sempre em dia sem esquecimentos.",
+    icon: "ClipboardCheck",
   },
   {
-    name: "Marina Oliveira",
-    role: "Médica",
-    avatar: "/images/testimonial-4.jpg",
-    content: "O planner financeiro e a planilha são incríveis! Finalmente tenho controle sobre meus gastos e já estou vendo resultados reais.",
-    rating: 5,
+    title: "Calendário Financeiro",
+    description: "Calendário anual com todas as datas importantes para sua vida financeira.",
+    icon: "CalendarDays",
   },
   {
-    name: "Beatriz Santos",
-    role: "Empresária",
-    avatar: "/images/testimonial-5.jpg",
-    content: "O Edition Aleh não é só um ebook, é um verdadeiro curso de educação financeira com um toque de acolhimento que faz toda diferença.",
-    rating: 5,
+    title: "Desafio 30 Dias",
+    description: "Transforme seus hábitos financeiros em apenas 30 dias com desafios diários.",
+    icon: "Zap",
   },
+  {
+    title: "Acesso Vitalício",
+    description: "Receba o material e acesse quando quiser, por quantas vezes precisar.",
+    icon: "Infinity",
+  },
+];
+
+export const OFFER_ITEMS = [
+  { label: "E-book Edition Aleh em PDF", icon: "BookOpen" },
+  { label: "Planner Financeiro", icon: "NotebookPen" },
+  { label: "Checklist Financeiro", icon: "ClipboardCheck" },
+  { label: "Calendário Financeiro", icon: "CalendarDays" },
+  { label: "Desafio de 30 dias", icon: "Zap" },
+  { label: "Acesso vitalício", icon: "Infinity" },
 ];
 
 export const FAQS: FAQ[] = [
@@ -247,7 +251,7 @@ export const FAQS: FAQ[] = [
   },
   {
     question: "Quanto tempo leva para ver resultados?",
-    answer: "Muitas alunas relatam mudanças significativas já nas primeiras semanas. O método é estruturado para que você veja resultados desde o diagnóstico inicial.",
+    answer: "O método é estruturado para que você já comece a organizar sua vida financeira desde o diagnóstico inicial. O ritmo de evolução depende da sua dedicação e consistência na aplicação do que aprender.",
   },
   {
     question: "Como recebo o ebook após a compra?",
@@ -289,7 +293,7 @@ export const FOOTER_LINKS = [
   { label: "Início", href: "#hero" },
   { label: "Benefícios", href: "#beneficios" },
   { label: "Conteúdo", href: "#conteudo" },
-  { label: "Depoimentos", href: "#depoimentos" },
+  { label: "Conteúdo incluído", href: "#conteudo-incluido" },
   { label: "FAQ", href: "#faq" },
   { label: "Planilha", href: "#planilha" },
   { label: "Política de Privacidade", href: "/politica-privacidade" },

@@ -18,14 +18,6 @@ export interface Bonus {
   icon: string;
 }
 
-export interface Testimonial {
-  name: string;
-  role: string;
-  avatar: string;
-  content: string;
-  rating: number;
-}
-
 export interface FAQ {
   question: string;
   answer: string;

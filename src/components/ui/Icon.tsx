@@ -41,6 +41,7 @@ import {
   TrendingUp,
   NotebookPen,
   MessageCircle,
+  Infinity,
   type LucideIcon,
 } from "lucide-react";
 
@@ -87,6 +88,7 @@ const iconMap: Record<string, LucideIcon> = {
   TrendingUp,
   NotebookPen,
   MessageCircle,
+  Infinity,
 };
 
 interface IconProps {

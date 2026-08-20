@@ -17,11 +17,11 @@ export function Hero() {
     >
       <div
         className="absolute inset-0 bg-cover bg-center sm:hidden"
-        style={{ backgroundImage: 'url("/background-mobile.png")' }}
+        style={{ backgroundImage: 'url("/background-mobile.jpg")' }}
       />
       <div
         className="absolute inset-0 bg-cover bg-center hidden sm:block"
-        style={{ backgroundImage: 'url("/background.png")' }}
+        style={{ backgroundImage: 'url("/background.jpg")' }}
       />
 
       <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/20" />
@@ -38,7 +38,7 @@ export function Hero() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm mb-6">
               <span className="w-2 h-2 rounded-full bg-rose-medium animate-pulse" />
               <span className="text-white text-sm font-medium">
-                Edição Limitada
+                Método simples e acolhedor
               </span>
             </div>
 
@@ -76,22 +76,12 @@ export function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1 }}
-              className="flex items-center gap-4 mt-8 pt-8 border-t border-white/10"
+              className="flex items-center gap-3 mt-8 pt-8 border-t border-white/10"
             >
-              <div className="flex -space-x-3">
-                {[1, 2, 3, 4].map((i) => (
-                  <div
-                    key={i}
-                    className="w-10 h-10 rounded-full border-2 border-white/20 bg-gradient-to-br from-rose-light to-rose-medium flex items-center justify-center text-xs font-bold text-white"
-                  >
-                    {String.fromCharCode(64 + i)}
-                  </div>
-                ))}
-              </div>
-              <div>
-                <p className="text-white font-semibold text-sm">+2.000 mulheres</p>
-                <p className="text-white/60 text-xs">já transformaram suas finanças</p>
-              </div>
+              <Sparkles size={20} className="text-gold shrink-0" />
+              <p className="text-white/80 text-sm sm:text-base leading-relaxed">
+                Um método simples para começar a organizar sua vida financeira.
+              </p>
             </motion.div>
 
             <motion.div

@@ -7,7 +7,7 @@ import { Modules } from "@/components/sections/Modules";
 import { Bonuses } from "@/components/sections/Bonuses";
 import { Spreadsheet } from "@/components/sections/Spreadsheet";
 import { BeforeAfterSection } from "@/components/sections/BeforeAfter";
-import { Testimonials } from "@/components/sections/Testimonials";
+import { WhatYouGet } from "@/components/sections/WhatYouGet";
 import { Guarantee } from "@/components/sections/Guarantee";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { CTA } from "@/components/sections/CTA";
@@ -29,7 +29,7 @@ export default function HomePage() {
         <Bonuses />
         <Spreadsheet />
         <BeforeAfterSection />
-        <Testimonials />
+        <WhatYouGet />
         <Guarantee />
         <FAQSection />
         <CTA />

@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Sparkles, ShieldCheck, ArrowRight } from "lucide-react";
+import { Sparkles, ShieldCheck, ArrowRight, Check } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { SocialButton } from "@/components/ui/SocialButton";
-import { Countdown } from "@/components/layout/Countdown";
-import { PURCHASE_LINK, PRICING } from "@/constants";
+import { DynamicIcon } from "@/components/ui/Icon";
+import { PURCHASE_LINK, PRICING, OFFER_ITEMS } from "@/constants";
 
 export function CTA() {
   return (
@@ -23,15 +23,6 @@ export function CTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6">
-            <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
-            <span className="text-gold text-sm font-medium">Oferta por tempo limitado</span>
-          </div>
-
-          <div className="mb-8">
-            <Countdown />
-          </div>
-
           <div className="mb-8">
             <p className="text-gray-400 line-through text-xl mb-1">De {PRICING.originalPrice}</p>
             <p className="text-4xl sm:text-5xl font-bold text-white">
@@ -45,9 +36,26 @@ export function CTA() {
             <span className="text-gradient">uma decisão hoje</span>.
           </h2>
 
+          <div className="mb-8">
+            <p className="text-white font-semibold text-lg mb-4">Você recebe:</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-lg mx-auto">
+              {OFFER_ITEMS.map((item) => (
+                <div
+                  key={item.label}
+                  className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-left"
+                >
+                  <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-rose-light/30 to-gold/20 flex items-center justify-center shrink-0">
+                    <DynamicIcon name={item.icon} className="text-gold" size={16} />
+                  </div>
+                  <span className="text-white text-sm">{item.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mb-8 max-w-2xl mx-auto">
-            Não espere o momento perfeito. Comece agora a construir a vida organizada e 
-            próspera que você merece. Seu eu do futuro vai te agradecer.
+            Comece agora a construir a vida organizada e tranquila que você merece, 
+            com um passo a passo simples e acolhedor.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
@@ -79,7 +87,7 @@ export function CTA() {
               Acesso Imediato
             </span>
             <span className="flex items-center gap-1">
-              <ShieldCheck size={14} />
+              <Check size={14} />
               7 Dias de Garantia
             </span>
           </div>

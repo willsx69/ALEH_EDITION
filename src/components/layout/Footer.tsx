@@ -27,8 +27,8 @@ export function Footer() {
               <Image
                 src="/images/logo-aleh.png"
                 alt="Edition Aleh"
-                width={160}
-                height={40}
+                width={1024}
+                height={1024}
                 className="h-10 w-auto"
               />
             </div>
