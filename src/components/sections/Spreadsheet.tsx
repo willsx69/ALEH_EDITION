@@ -19,7 +19,7 @@ export function Spreadsheet() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle
           title="Planilha Financeira Premium"
-          subtitle="A ferramenta ideal para colocar em prática tudo o que você aprende no ebook."
+          subtitle="Uma ferramenta complementar ao Edition Aleh para colocar sua organização financeira em prática."
         />
 
         <motion.div

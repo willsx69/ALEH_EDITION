@@ -35,10 +35,12 @@ export function PricingCard({ plan }: PricingCardProps) {
           {plan.originalPrice && (
             <p className="text-gray-400 line-through text-lg mb-1">{plan.originalPrice}</p>
           )}
+          <p className="text-gray-400 text-sm mb-1">Por apenas</p>
           <p className="text-3xl sm:text-5xl font-bold text-gray-900">{plan.price}</p>
           <p className="text-gray-400 text-sm mt-2">Pagamento único - acesso vitalício</p>
         </div>
 
+        <p className="text-gray-900 font-semibold mb-4">Você recebe:</p>
         <ul className="space-y-4 mb-8">
           {plan.features.map((feature) => (
             <li key={feature} className="flex items-start gap-3">
@@ -58,7 +60,7 @@ export function PricingCard({ plan }: PricingCardProps) {
           iconPosition="left"
           href={PURCHASE_LINK}
         >
-          Quero meu Ebook
+          Quero meu Edition Aleh
         </Button>
 
           <div className="flex items-center justify-center gap-2 mt-4">

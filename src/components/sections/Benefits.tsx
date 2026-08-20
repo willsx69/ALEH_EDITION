@@ -13,7 +13,7 @@ export function Benefits() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <SectionTitle
           title="Tudo que você vai conquistar"
-          subtitle="Benefícios que vão além do dinheiro. Uma transformação completa na sua relação com as finanças."
+          subtitle="Benefícios que vão além do dinheiro: mais clareza, planejamento e segurança nas suas decisões."
         />
 
         <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

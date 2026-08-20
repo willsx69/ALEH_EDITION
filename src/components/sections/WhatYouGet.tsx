@@ -35,7 +35,7 @@ export function WhatYouGet() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <SectionTitle
           title="O que você vai encontrar no Edition Aleh"
-          subtitle="Tudo o que está incluído na sua compra, organizado para facilitar a sua transformação financeira."
+          subtitle="Tudo o que está incluído na sua compra, pronto para você começar sua organização financeira."
         />
 
         <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">

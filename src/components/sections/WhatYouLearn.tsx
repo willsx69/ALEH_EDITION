@@ -13,7 +13,7 @@ export function WhatYouLearn() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <SectionTitle
           title="O que você vai aprender"
-          subtitle="Um conteúdo completo e estruturado para sua transformação financeira."
+          subtitle="Um conteúdo completo e estruturado para começar a organizar sua vida financeira."
         />
 
         <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">

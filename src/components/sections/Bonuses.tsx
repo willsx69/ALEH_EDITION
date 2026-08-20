@@ -13,7 +13,7 @@ export function Bonuses() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <SectionTitle
           title="Bônus Inclusos"
-          subtitle="Um pacote completo de ferramentas para acelerar sua transformação financeira."
+          subtitle="Um pacote completo de ferramentas para colocar sua organização financeira em prática."
         />
 
         <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">

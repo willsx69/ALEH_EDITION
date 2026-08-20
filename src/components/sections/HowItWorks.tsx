@@ -22,8 +22,8 @@ const steps = [
   },
   {
     icon: Sparkles,
-    title: "Transforme sua Vida",
-    description: "Veja a mudança acontecer e conquiste a liberdade financeira.",
+    title: "Transforme sua relação com o dinheiro",
+    description: "Mantenha a constância e veja sua organização financeira evoluir mês a mês.",
   },
 ];
 
@@ -33,7 +33,7 @@ export function HowItWorks() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle
           title="Como funciona"
-          subtitle="Simples, prático e transformador. Veja como é fácil começar."
+          subtitle="Simples e prático. Veja como é fácil começar."
         />
 
         <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

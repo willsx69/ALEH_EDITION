@@ -44,7 +44,7 @@ export function Hero() {
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 text-balance">
               Organize suas finanças e{" "}
-              <span className="text-gradient">realize seus sonhos</span>.
+              <span className="text-gradient">viva com mais tranquilidade</span>.
             </h1>
 
             <p className="text-lg sm:text-xl text-white/70 leading-relaxed mb-8 max-w-lg">
@@ -58,7 +58,7 @@ export function Hero() {
                 icon={<Sparkles size={20} />}
                 onClick={scrollToCTA}
               >
-                Quero meu Ebook
+                Quero meu Edition Aleh
               </Button>
               <Button
                 size="lg"

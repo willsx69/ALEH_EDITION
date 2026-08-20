@@ -67,7 +67,7 @@ export function CTA() {
               iconPosition="left"
               href={PURCHASE_LINK}
             >
-              Quero meu Ebook Agora
+              Começar agora por {PRICING.price}
             </Button>
           </div>
 

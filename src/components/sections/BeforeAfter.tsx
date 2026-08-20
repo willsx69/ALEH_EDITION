@@ -11,7 +11,7 @@ export function BeforeAfterSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle
           title="Antes e Depois"
-          subtitle="A transformação que o Edition Aleh proporciona na vida das mulheres."
+          subtitle="O que muda quando você começa a se organizar financeiramente."
         />
 
         <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">

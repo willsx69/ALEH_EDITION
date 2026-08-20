@@ -105,7 +105,7 @@ export const WHAT_YOU_LEARN = [
   },
   {
     title: "Mudança de Mentalidade",
-    description: "Transforme sua relação com o dinheiro de vez.",
+    description: "Comece a transformar sua relação com o dinheiro, no seu ritmo.",
   },
 ];
 
@@ -198,7 +198,7 @@ export const BEFORE_AFTER: BeforeAfter = {
     "Organização que funciona",
     "Controle total das finanças",
     "Clareza para decidir",
-    "Liberdade financeira real",
+    "Mais clareza e segurança para cuidar do seu dinheiro",
   ],
 };
 
@@ -305,15 +305,13 @@ export const PRICING: PricingPlan = {
   name: "Edition Aleh",
   price: "R$ 9,99",
   originalPrice: "R$ 19,90",
-  description: "Transforme sua relação com o dinheiro e conquiste a liberdade financeira que você merece.",
+  description: "Comece a transformar sua relação com o dinheiro e dê os primeiros passos para organizar sua vida financeira.",
   features: [
-    "Ebook completo em PDF",
+    "E-book Edition Aleh em PDF",
     "Planner Financeiro",
     "Checklist Financeiro",
     "Calendário Financeiro",
-    "Desafio 30 Dias",
-    "Suporte via e-mail",
-    "7 dias de garantia",
+    "Desafio de 30 dias",
     "Acesso vitalício",
   ],
 };
